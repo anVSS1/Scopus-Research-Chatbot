@@ -136,10 +136,6 @@ Scientific-Article-Recommender/
 ├── enhanced_semantic_indexing.py    # FAISS index creation
 ├── requirements.txt                 # Python dependencies
 ├── README.md                        # This file
-├── huggingface space/
-│   ├── app_hf.py                   # HF Spaces version
-│   ├── requirements_hf.txt         # HF Spaces dependencies
-│   └── README_hf.md                # HF Spaces documentation
 └── kaggle_semantic_indexing.ipynb  # Jupyter notebook for indexing
 ```
 
