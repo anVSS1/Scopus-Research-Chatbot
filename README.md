@@ -41,44 +41,13 @@ The system uses 5 specialized FAISS indexes for different search scenarios:
 4. **Institution Index**: Institutional affiliations and locations
 5. **Combined Index**: Unified search across all content types
 
-An intelligent chatbot for searching and analyzing scientific publications from Scopus using advanced NLP techniques, multi-index semantic search, and intelligent query parsing.
-
-## 🌟 Features
-
-- **🔬 SPECTER Embeddings**: Uses SPECTER model specifically trained on scientific papers for superior academic relevance
-- **🧠 Smart Query Parsing**: Automatically detects filters in natural language (e.g., "articles from 2019", "papers by Smith")
-- **📊 Multi-Index Search**: Five specialized FAISS indexes for different search types (content, metadata, full-text, institutions, combined)
-- **⚡ Fast Retrieval**: Optimized FAISS indexes for efficient similarity search across thousands of papers
-- **🎯 Advanced Filtering**: Filter by year, author, keywords, institutions, and more
-- **💻 User-Friendly Interface**: Clean Gradio web application with intuitive chat interface
-
-## 🏗️ Architecture
-
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────���───┐
-│   Scopus API    │───▶│  Data Pipeline   │───▶│   SQLite DB     │
-│   (Raw Data)    │    │  (Clean & Store) │    │ (Structured)    │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                                         │
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   FAISS Index   │◀───│ SPECTER Embeddings│◀───│  Text Content   │
-│ (Fast Search)   │    │ (Semantic Vectors)│    │ (Title+Abstract)│
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                                               │
-         ▼                                               ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    Streamlit Web App                            ���
-│              (Query Processing + Results Display)               │
-└─────────────────────────────────────────────────────────────────┘
-```
-
 ## 🚀 Quick Start
 
 ### 1. Installation
 
 ```bash
-git clone https://github.com/yourusername/scopus-chatbot.git
-cd scopus-chatbot
+git clone https://github.com/anVSS1/Scientific-Article-Recommender.git
+cd Scientific-Article-Recommender
 pip install -r requirements.txt
 ```
 
@@ -159,7 +128,7 @@ python huggingface\ space/app_hf.py
 ## 📁 Project Structure
 
 ```
-scopus-chatbot/
+Scientific-Article-Recommender/
 ├── app.py                           # Main Gradio application
 ├── scopus_api.py                    # Scopus API data collection
 ├── database.py                      # Database schema and operations
@@ -204,7 +173,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Getting Help
 
-- Check the [Issues](https://github.com/yourusername/scopus-chatbot/issues) page
+- Check the [Issues](https://github.com/anVSS1/Scientific-Article-Recommender/issues) page
 - Review the documentation in `livrables/` folder
 - Ensure all dependencies are correctly installed
 
