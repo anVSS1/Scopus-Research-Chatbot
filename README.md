@@ -110,14 +110,6 @@ python huggingface\ space/app_hf.py
 - `scopus_institution_index.faiss` - Institution-based search
 - `scopus_full_index.faiss` - Comprehensive search
 
-## 📊 Dataset
-
-- **Source**: Scopus API (2018-2025)
-- **Articles**: 4,000+ scientific papers
-- **Domains**: 15 scientific fields (Computer Science, Medicine, Engineering, etc.)
-- **Languages**: English
-- **Content**: Title, Abstract, Authors, Keywords, Institutions, Countries
-
 ## 🛠️ Technology Stack
 
 - **Backend**: Python, SQLite, FAISS
