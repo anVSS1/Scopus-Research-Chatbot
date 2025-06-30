@@ -158,21 +158,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Performance**: Semantic search requires substantial computational resources
 - **Privacy**: This project handles academic data responsibly per Scopus terms
 
-## 🆘 Troubleshooting
-
-### Common Issues
-
-1. **Missing API Keys**: Ensure your Scopus API credentials are properly configured
-2. **Large File Sizes**: Database and FAISS indexes are excluded from Git (see `.gitignore`)
-3. **Memory Issues**: Reduce batch sizes in indexing scripts for lower-memory systems
-4. **Model Loading**: SPECTER model download requires stable internet connection
-
-### Getting Help
-
-- Check the [Issues](https://github.com/anVSS1/Scientific-Article-Recommender/issues) page
-- Review the documentation in `livrables/` folder
-- Ensure all dependencies are correctly installed
-
 ---
 
 **Note**: This repository contains the code and scripts but excludes large data files (database, indexes) and sensitive API credentials. See setup instructions above for complete deployment.
